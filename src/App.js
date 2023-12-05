@@ -16,7 +16,7 @@ function App() {
    <>
    <BrowserRouter>
    <Routes>
-    <Route path='/home' element = {
+    <Route path='/' element = {
 <>
 <div className={style.navbarDiv}>
 <Navbar/>
