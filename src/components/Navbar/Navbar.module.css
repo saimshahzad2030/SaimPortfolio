@@ -1,0 +1,130 @@
+.navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  /* background-color: chartreuse; */
+}
+.socialImages{
+  margin-left: 10px;
+  width: 30px;
+}
+.logoImg{
+  width: 80px;
+  border-radius: 50%;
+}
+.hideButton{
+  display: none;
+}
+.logoDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.linkDiv{
+  display: flex;
+  transition: display 0.5s ease; /* Adjust the duration and timing function as needed */
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between
+}
+.nav_ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.linkDiv{
+  width: 60%;
+}
+.links{
+  /* background-color: aqua; */
+  padding: 0;
+}
+.buttons{
+ padding: 0;
+}
+.socials{
+  background-color: rgb(42, 165, 71);
+  padding: 0;
+}
+.logoHeading{
+  font-size: 35px;
+  margin-left: 10px;
+  color: rgb(0, 51, 102);
+}
+.nav_ul> li {
+list-style: none;
+}
+.links>*{
+margin-left: 20px;
+text-decoration: none;
+}
+.link{
+text-decoration: none;
+font-size: 22px;
+font-weight: bold;
+color: rgb(0, 51, 102);
+}
+.link:hover + .navbar {
+  background-color: aqua;
+}
+@media only screen and  (min-width:750px) and(max-width:850px)  {
+  .navbar{
+    justify-content: space-between;
+  }
+  .logoDiv{
+    padding-left: 20px;
+  }
+  .linkDiv{
+    width: 70%;
+  }
+  .buttons{
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width:750px)  {
+.hideButton{
+  display: flex;
+}
+/* .linkDiv{
+  display: none;
+} */
+.links{
+  flex-direction: column;
+}
+.navbar{
+  flex-direction: column;
+}
+.logoDiv{
+  width:90%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.linkDiv{
+  flex-direction: column;
+background-color: aliceblue;
+width: 100%;
+}
+.linkDiv>*{
+  padding-top: 10px;
+}
+.links>*{
+  padding-top: 20px;
+}
+.link{
+  font-size: 25px;
+  }
+}

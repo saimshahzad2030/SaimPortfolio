@@ -1,0 +1,17 @@
+.allFaqDiv{
+    width: 100%;
+    padding-top: 20px;
+}
+.allFaqDiv > h1{
+   text-align:center;
+   margin-top: 30px;
+   font-size:40px;
+   
+  color: rgb(0, 51, 102);
+}
+@media only screen and  (max-width:615px){
+    .allFaqDiv > h1{
+        margin-top: 50px;
+        
+     }
+}

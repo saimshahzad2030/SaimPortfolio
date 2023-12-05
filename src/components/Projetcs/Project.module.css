@@ -1,0 +1,115 @@
+.mainDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.mainDiv h1{
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 51, 102);
+    text-align: center;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.child{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.textDiv{
+    width: 70%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 30px;
+}
+.img{
+    width: 60%;
+    border-radius:50% ;
+}
+.btnDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.centerDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+.list img{
+    width: 25px;
+}
+.centerDiv h4{
+    margin: 0;
+   
+}
+.child > h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 51, 102);
+}
+.centerDiv ul{
+    display: flex;
+    flex-direction: row;
+}
+.list p{
+    font-size: 18px;
+    margin-left: 10px;
+    color: blue;
+    font-weight: bold;
+}
+@media only screen and (min-width:690px) and (max-width:750px) {
+    .img{
+        width: 70%;
+    }
+}
+@media only screen and (min-width:620px) and  (max-width:690px) {
+    .child > h2{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 51, 102);
+    }
+    .centerDiv > h4{
+        font-size: 14px;
+    }
+    .centerDiv{
+        
+        width: 80%;
+    }
+    .img{
+        width:90%;
+    }
+}
+@media only screen and (min-width:620px) and  (max-width:690px) {
+    .project{
+        flex-direction: column;
+    }
+    .project > *{
+        margin-top: 40px;
+    }
+}
