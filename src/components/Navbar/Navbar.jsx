@@ -51,7 +51,7 @@ export default function Navbar({selectedLink}) {
       </div>
       <div className={style.linkDiv} ref={reference}>
         <ul className={`${style.nav_ul} ${style.links}`}>
-          <li><Link  className={style.link} to={'/home'}>Home</Link></li>
+          <li><Link  className={style.link} to={'/'}>Home</Link></li>
           <li><Link  className={style.link} to={'/skills'}>Skills</Link></li>
           <li><Link  className={style.link} to={'/projects'}>Projects</Link></li>
           <li><Link  className={style.link} to='/faqs'>Faq</Link></li>
