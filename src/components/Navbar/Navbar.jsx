@@ -78,10 +78,17 @@ export default function Navbar({selectedLink}) {
       </div>
       <div className={style.linkDiv} ref={reference}>
         <ul className={`${style.nav_ul} ${style.links}`}>
+<<<<<<< HEAD
           <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to={'/'}>Home</Link></li>
           <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to={'/skills'}>Skills</Link></li>
           <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to={'/projects'}>Projects</Link></li>
           <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to='/faqs'>Faq</Link></li>
+=======
+          <li><Link  className={style.link} to={'/'}>Home</Link></li>
+          <li><Link  className={style.link} to={'/skills'}>Skills</Link></li>
+          <li><Link  className={style.link} to={'/projects'}>Projects</Link></li>
+          <li><Link  className={style.link} to='/faqs'>Faq</Link></li>
+>>>>>>> a22c48817643afad33c4f1315d0b9625b472e10b
         </ul>
         {/* <ul className={`${style.nav_ul} ${style.socials}`}>
         
