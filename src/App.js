@@ -1,8 +1,9 @@
 
 import style from './App.module.css';
 import Home from './components/Home/Home';
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes,Link } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 import Row from './components/Row/Row'
 import Column from './components/Column/Column'
 import Footer from './components/Footer/Footer'
@@ -16,12 +17,14 @@ function App() {
    <>
    <BrowserRouter>
    <Routes>
-    <Route path='/home' element = {
+    <Route path='/' element = {
 <>
-<div className={style.navbarDiv}>
-<Navbar/>
-<Home/>
-</div>
+  
+   <Layout>
+              
+              
+              <div className={style.navbarDiv}> <Home/></div>
+ 
 <Row styles={{marginTop:'50px'}}>
               <Column>
               <h2 style={{fontWeight:'bold',marginBottom:'10px',color:'rgb(0, 51, 102)'}}>Contacts</h2>
@@ -48,7 +51,7 @@ function App() {
              </Row>
              <Divider styles={{width:'90%', height:'1px',backgroundColor:'grey'}}/>
              
-             <Footer><h4 style={{color:'rgb(0, 51, 102)'}}>Copyright @ Saim Shahzad</h4></Footer>
+             <Footer><h4 style={{color:'rgb(0, 51, 102)'}}>Copyright @ Saim Shahzad</h4></Footer></Layout>
 </>
 
     }/>
@@ -58,9 +61,8 @@ function App() {
 
 <Route path='/skills' element = {
 <>
-<div className={style.navbarDiv}>
-<Navbar/>
-</div>
+<Layout>
+    
 <Skills/>
 <Row styles={{marginTop:'50px'}}>
               <Column>
@@ -89,6 +91,8 @@ function App() {
              <Divider styles={{width:'90%', height:'1px',backgroundColor:'grey'}}/>
              
              <Footer><h4 style={{color:'rgb(0, 51, 102)'}}>Copyright @ Saim Shahzad</h4></Footer>
+
+</Layout>
 </>
 
     }/>
@@ -98,9 +102,7 @@ function App() {
 
 <Route path='/projects' element = {
 <>
-<div className={style.navbarDiv}>
-<Navbar/>
-</div>
+<Layout>
 <Project/>
 <Row styles={{marginTop:'50px'}}>
               <Column>
@@ -129,6 +131,7 @@ function App() {
              <Divider styles={{width:'90%', height:'1px',backgroundColor:'grey'}}/>
              
              <Footer><h4 style={{color:'rgb(0, 51, 102)'}}>Copyright @ Saim Shahzad</h4></Footer>
+</Layout>
 </>
 
     }/>
@@ -138,9 +141,8 @@ function App() {
 
 <Route path='/faqs' element = {
 <>
-<div className={style.navbarDiv}>
-<Navbar/>
-</div>
+<Layout>
+    
 <AllFaqs/>
 <Row styles={{marginTop:'50px'}}>
               <Column>
@@ -169,6 +171,7 @@ function App() {
              <Divider styles={{width:'90%', height:'1px',backgroundColor:'grey'}}/>
              
              <Footer><h4 style={{color:'rgb(0, 51, 102)'}}>Copyright @ Saim Shahzad</h4></Footer>
+</Layout>
 </>
 
     }/>

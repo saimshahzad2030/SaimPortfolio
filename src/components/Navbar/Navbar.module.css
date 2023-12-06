@@ -1,11 +1,34 @@
-.navbar{
+.navbar {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 10px;
-  /* background-color: chartreuse; */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust as needed */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  /* background-color: aliceblue; */
+  box-shadow: 0 4px 6px rgba(167, 163, 163, 0.1);
+}
+.links > li {
+  transition: margin-bottom 0.3s ease; /* Adding smooth transition for margin-bottom */
+}
+
+.links > li:hover {
+  margin-bottom: 10px;
+}
+
+.links li > .link {
+  transition: font-size 0.3s ease; /* Adding smooth transition for font-size */
+}
+
+.links li > .link:hover {
+  font-size: 28px;
 }
 .socialImages{
   margin-left: 10px;
@@ -96,6 +119,21 @@ color: rgb(0, 51, 102);
   }
 }
 @media only screen and (max-width:750px)  {
+  .links > li {
+    transition: margin-left 0.3s ease; /* Adding smooth transition for margin-bottom */
+  }
+  
+  .links > li:hover {
+    margin-left: 10px;
+  }
+  
+  .links li > .link {
+    transition: font-size 0.3s ease; /* Adding smooth transition for font-size */
+  }
+  
+  .links li > .link:hover {
+    font-size: 28px;
+  }
 .hideButton{
   display: flex;
 }

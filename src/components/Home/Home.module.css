@@ -5,7 +5,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}
+    animation: slideIn 0.5s ease-out; /* Set the animation properties */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 .logoImg{
     width: 100%;
     border-radius: 50%;

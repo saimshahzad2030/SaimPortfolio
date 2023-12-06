@@ -5,6 +5,33 @@ import { Button } from '@mui/material';
 import {FaBars} from 'react-icons/fa'
 export default function Navbar({selectedLink}) {
 
+  const [scrolled, setScrolled] = React.useState(false);
+  const scrollToSection = (id) => {
+   const element = document.getElementById(id);
+   if (element) {
+     element.scrollIntoView({ behavior: 'smooth' });
+   }
+ };
+ 
+ const scrollToTop = () => {
+   window.scrollTo({ top: 0, behavior: 'smooth' });
+ };
+ 
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+ 
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const [display,setDisplay] = React.useState(null)
   const reference = React.useRef('saim')
       const clickHandler = ()=>{
@@ -38,7 +65,7 @@ export default function Navbar({selectedLink}) {
             }, [reference])
         
   return (
-    <nav className={style.navbar}>
+    <nav className={`${style.navbar} ${scrolled ? style.scrolled : ''}`}>
       <div className={style.logoDiv}>
         <div className={style.logo}>
           <img className={style.logoImg} src={process.env.PUBLIC_URL + '/Assets/logo/profile.png'} alt="logo" />
@@ -51,10 +78,10 @@ export default function Navbar({selectedLink}) {
       </div>
       <div className={style.linkDiv} ref={reference}>
         <ul className={`${style.nav_ul} ${style.links}`}>
-          <li><Link  className={style.link} to={'/home'}>Home</Link></li>
-          <li><Link  className={style.link} to={'/skills'}>Skills</Link></li>
-          <li><Link  className={style.link} to={'/projects'}>Projects</Link></li>
-          <li><Link  className={style.link} to='/faqs'>Faq</Link></li>
+          <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to={'/'}>Home</Link></li>
+          <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to={'/skills'}>Skills</Link></li>
+          <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to={'/projects'}>Projects</Link></li>
+          <li><Link  className={style.link}  onClick={()=>{ scrollToTop();scrollToSection(``)}} to='/faqs'>Faq</Link></li>
         </ul>
         {/* <ul className={`${style.nav_ul} ${style.socials}`}>
         

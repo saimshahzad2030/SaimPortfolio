@@ -4,10 +4,17 @@ import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 export default function Project() {
     const list = [
-        {name:'Restaurant App (Deployed)',description:'Introducing Restaurant Application, a cutting-edge mobile application crafted with precision on the React framework, featuring a bespoke design tailored for a seamless user experience. Dive into the innovative world of this app, where each of its four meticulously designed pages opens up a new realm of possibilities.',img:'restaurant.jpg',deployed:true,developedBy:[{name:'React',logo:'react.png'}],deployedLink:'https://65676e7fb171ab3fa350899b--fancy-pastelito-7d6a70.netlify.app/',githubLink:'https://github.com/saimshahzad2030/Restaurant-Portfolio.git'},
-        {name:'Book Library app (Backend)',description:'Introducing Book Library App, a robust and secure backend application built on the powerful Node.js and Express.js frameworks. Elevate your development experience with a feature-rich backend that seamlessly integrates authentication, authorization, and database functionalities. Authentication and Authorization: Immerse yourself in a world of secure user management with our app. Our authentication system ensures that user data is protected while providing a smooth and user-friendly login and signup experience.'
+        {name:'Restaurant App (Deployed)',description:'Introducing Restaurant Application, a cutting-edge mobile application crafted with precision on the React framework, featuring a bespoke design tailored for a seamless user experience. Dive into the innovative world of this app, where each of its four meticulously designed pages opens up a new realm of possibilities.',img:'restaurant.jpg',deployed:true,developedBy:[{name:'React',logo:'react.png'}],deployedLink:'https://65676e7fb171ab3fa350899b--fancy-pastelito-7d6a70.netlify.app/',githubLink:'https://github.com/saimshahzad2030/Restaurant-Portfolio.git'
+        }
+    ,
+        {
+        name:'Book Library app (Backend)',
+        description:'Introducing Book Library App, a robust and secure backend application built on the powerful Node.js and Express.js frameworks. Elevate your development experience with a feature-rich backend that seamlessly integrates authentication, authorization, and database functionalities. Authentication and Authorization: Immerse yourself in a world of secure user management with our app. Our authentication system ensures that user data is protected while providing a smooth and user-friendly login and signup experience.'
         ,img:'library.jpg'
-        ,deployed:false,developedBy:[{name:'Node js',logo:'node.png'},{name:'Mongo db',logo:'mongodb.png'}],githubLink:'https://github.com/saimshahzad2030/MidTermBookLib.git'}
+        ,deployed:false,
+        developedBy:[{name:'Node js',logo:'node.png'},{name:'Mongo db',logo:'mongodb.png'}]
+        ,githubLink:'https://github.com/saimshahzad2030/MidTermBookLib.git'
+        }
         
 
 ]

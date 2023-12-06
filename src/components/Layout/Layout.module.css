@@ -1,0 +1,27 @@
+.navbarDiv{
+    background-image: url('../../../public/Assets/bg/bg.jpg');
+    
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.gotoTopDiv{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 50px ;
+    right: 50px;
+}
+.gotoTopDiv button{
+    background: transparent;
+    border-radius: 6px;
+    margin-right: 50px;
+}
+.gotoTopDiv button:hover{
+    cursor: pointer;
+    margin-right: 50px;
+}
